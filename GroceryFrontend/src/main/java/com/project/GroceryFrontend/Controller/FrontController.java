@@ -78,4 +78,28 @@ UserDAO userDAO;
 		return mv;
 
      }
+	@RequestMapping(value="/contact/{userId}")
+	public ModelAndView path(@PathVariable("userId") int u_id)
+	{
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("userclickcontact", true);
+       System.out.println(u_id);
+		return mv;
+
+	}
+	@RequestMapping(value="/aboutus")
+	public ModelAndView main()
+	{
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("userclickaboutus", true);
+		System.out.println("this is main");
+		return mv;
+	}
+	@RequestMapping(value="/redirect")
+	public String redirectMain()
+	{
+
+		System.out.println("this is redirect");
+		return "redirect:/aboutus" ;
+	}
 }

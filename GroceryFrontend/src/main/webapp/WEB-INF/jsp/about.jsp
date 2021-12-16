@@ -13,5 +13,6 @@
  <%-- <c:forEach var="core" items="${name}">
    <h1>${core}</h1>
  </c:forEach> --%>
+ hallow
  </body>
 </html>

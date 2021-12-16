@@ -61,6 +61,10 @@
    		 <%@include file="manageproduct.jsp" %>
     </c:if>
     
+      <c:if test="${userclickcontact==true }">
+   		 <%@include file="contact.jsp" %>
+    </c:if>
+    
     <c:if test="${userclicksuccess==true }">
    		 <%@include file="loginsuccess.jsp" %>
     </c:if>
